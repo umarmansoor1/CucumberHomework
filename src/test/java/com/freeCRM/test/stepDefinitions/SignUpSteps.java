@@ -50,9 +50,9 @@ public class SignUpSteps {
 	    Thread.sleep(1000);
 	    driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys("John");
 	    driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys("Doe");
-	    driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("umar_mansoor1987@hotmail.com");
-	    driver.findElement(By.xpath("//input[@placeholder='Confirm Email']")).sendKeys("umar_mansoor1987@hotmail.com");
-	    driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("john1999");
+	    driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("abcd@xyz.com");
+	    driver.findElement(By.xpath("//input[@placeholder='Confirm Email']")).sendKeys("abcd@xyz.com");
+	    driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("john1991");
 	    driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("doe12345");
 	    driver.findElement(By.xpath("//input[@placeholder='Confirm Password']")).sendKeys("doe12345");
 	 System.out.println("Entered sign up details.");
@@ -90,6 +90,7 @@ public class SignUpSteps {
 	public void i_click_on_complete_registeration() throws Throwable {
 		Thread.sleep(2000);
 	    driver.findElement(By.xpath("//button[@name='finish']")).click();
+	   
 	    System.out.println("I completed registeration");
 	}
 
